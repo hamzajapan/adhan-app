@@ -1,0 +1,95 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<style>
+  html, body { margin: 0; height: 100%; background: #051c19; font-family: sans-serif; }
+  #map { position: absolute; inset: 0; }
+  /* دبوس ثابت في منتصف الشاشة: المستخدم يحرّك الخريطة تحته */
+  #pin { position: absolute; left: 50%; top: 50%; width: 36px; height: 48px; margin: -48px 0 0 -18px;
+         pointer-events: none; z-index: 1000; filter: drop-shadow(0 4px 6px rgba(0,0,0,.6)); }
+  #mosques { position: absolute; top: 10px; inset-inline-end: 10px; z-index: 1000; background: #07231f; color: #d9b55c;
+             border: 1px solid #d9b55c; border-radius: 18px; padding: 8px 14px; font-size: 14px; }
+  #status { position: absolute; bottom: 24px; left: 50%; transform: translateX(-50%); z-index: 1000; background: rgba(7,35,31,.9);
+            color: #edebe6; border-radius: 14px; padding: 6px 12px; font-size: 12px; display: none; }
+  .leaflet-control-attribution { font-size: 10px; }
+  .mosque-popup { text-align: center; }
+</style>
+</head>
+<body>
+<div id="map"></div>
+<button id="mosques"></button>
+<div id="status"></div>
+<svg id="pin" viewBox="0 0 36 48" xmlns="http://www.w3.org/2000/svg">
+  <path d="M18 1C9 1 2 8 2 17c0 12 16 30 16 30s16-18 16-30C34 8 27 1 18 1z" fill="#D9B55C" stroke="#7a5f1f" stroke-width="1.5"/>
+  <circle cx="18" cy="17" r="6" fill="#07231f"/>
+</svg>
+<script>
+  var q = new URLSearchParams(location.search);
+  var lat = parseFloat(q.get('lat')) || 30, lng = parseFloat(q.get('lng')) || 20, zoom = parseInt(q.get('zoom')) || 3;
+  // نصوص الواجهة بحسب لغة التطبيق (تُمرَّر في lang)
+  var STR = {
+    ar: { btn: '🕌 المساجد القريبة', searching: 'جارٍ البحث عن المساجد…', found: function (n) { return 'وُجد ' + n + ' مسجداً — اضغط على علامة لاختياره'; },
+          none: 'لا مساجد مسجّلة في هذه المنطقة', err: 'تعذّر جلب المساجد — تأكد من الإنترنت', tap: 'اضغط على العلامة لاختياره', mosque: 'مسجد', dir: 'rtl' },
+    fr: { btn: '🕌 Mosquées à proximité', searching: 'Recherche des mosquées…', found: function (n) { return n + ' mosquée(s) trouvée(s) — touchez un repère pour la choisir'; },
+          none: 'Aucune mosquée référencée dans cette zone', err: 'Impossible de charger les mosquées — vérifiez Internet', tap: 'Touchez le repère pour la choisir', mosque: 'Mosquée', dir: 'ltr' },
+    en: { btn: '🕌 Nearby mosques', searching: 'Searching for mosques…', found: function (n) { return n + ' mosque(s) found — tap a marker to pick it'; },
+          none: 'No mosques mapped in this area', err: 'Could not load mosques — check Internet', tap: 'Tap the marker to pick it', mosque: 'Mosque', dir: 'ltr' }
+  };
+  var T = STR[q.get('lang')] || STR.ar;
+  document.documentElement.setAttribute('dir', T.dir);
+  document.getElementById('mosques').textContent = T.btn;
+  var map = L.map('map', { zoomControl: true, attributionControl: true }).setView([lat, lng], zoom);
+  L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    maxZoom: 19,
+    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+  }).addTo(map);
+  var layer = L.layerGroup().addTo(map);
+  var status = document.getElementById('status');
+  function show(msg) { status.textContent = msg; status.style.display = msg ? 'block' : 'none'; }
+  function report() {
+    var c = map.getCenter();
+    if (window.AndroidBridge) AndroidBridge.onCenter(c.lat, c.lng);
+  }
+  map.on('moveend', report);
+  map.on('click', function (e) { map.panTo(e.latlng); });
+  report();
+
+  // المساجد القريبة من بيانات OpenStreetMap عبر Overpass (نصف قطر 3 كم حول المركز)
+  document.getElementById('mosques').onclick = function () {
+    var c = map.getCenter();
+    var query = '[out:json][timeout:25];(node["amenity"="place_of_worship"]["religion"="muslim"](around:3000,' + c.lat + ',' + c.lng + ');' +
+                'way["amenity"="place_of_worship"]["religion"="muslim"](around:3000,' + c.lat + ',' + c.lng + '););out center 60;';
+    show(T.searching);
+    fetch('https://overpass-api.de/api/interpreter', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+        body: 'data=' + encodeURIComponent(query)
+      })
+      .then(function (r) { return r.json(); })
+      .then(function (data) {
+        layer.clearLayers();
+        var n = 0;
+        data.elements.forEach(function (el) {
+          var p = el.type === 'node' ? el : el.center; if (!p) return;
+          var name = (el.tags && (T.dir === 'rtl' ? (el.tags['name:ar'] || el.tags.name) : (el.tags.name || el.tags['name:ar']))) || T.mosque;
+          n++;
+          L.circleMarker([p.lat, p.lon], { radius: 9, color: '#d9b55c', fillColor: '#6faf5c', fillOpacity: .9, weight: 2 })
+            .addTo(layer)
+            .bindPopup('<div class="mosque-popup" dir="' + T.dir + '"><b>' + name + '</b><br><small>' + T.tap + '</small></div>')
+            .on('click', function () {
+              map.panTo([p.lat, p.lon]);
+              if (window.AndroidBridge) AndroidBridge.onMosque(name, p.lat, p.lon);
+            });
+        });
+        show(n ? T.found(n) : T.none);
+        setTimeout(function () { show(''); }, 4000);
+      })
+      .catch(function () { show(T.err); setTimeout(function () { show(''); }, 4000); });
+  };
+</script>
+</body>
+</html>

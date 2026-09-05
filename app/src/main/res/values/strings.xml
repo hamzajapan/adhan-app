@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">أذان</string>
+    <string name="channel_adhan">الأذان</string>
+    <string name="channel_adhan_desc">تنبيهات الأذان الكاملة</string>
+    <string name="widget_desc">الصلاة القادمة ومواقيت اليوم</string>
+
+    <!-- التبويبات -->
+    <string name="tab_home">الرئيسية</string>
+    <string name="tab_adhkar">الأذكار</string>
+    <string name="tab_qibla">القبلة</string>
+    <string name="tab_more">المزيد</string>
+
+    <!-- الصلوات -->
+    <string name="prayer_fajr">الفجر</string>
+    <string name="prayer_sunrise">الشروق</string>
+    <string name="prayer_dhuhr">الظهر</string>
+    <string name="prayer_asr">العصر</string>
+    <string name="prayer_maghrib">المغرب</string>
+    <string name="prayer_isha">العشاء</string>
+    <string name="prayer_generic">الصلاة</string>
+
+    <!-- التاريخ -->
+    <string-array name="hijri_months">
+        <item>محرم</item><item>صفر</item><item>ربيع الأول</item><item>ربيع الآخر</item>
+        <item>جمادى الأولى</item><item>جمادى الآخرة</item><item>رجب</item><item>شعبان</item>
+        <item>رمضان</item><item>شوال</item><item>ذو القعدة</item><item>ذو الحجة</item>
+    </string-array>
+    <string name="hijri_suffix">هـ</string>
+    <string name="gregorian_suffix">م</string>
+
+    <!-- الرئيسية -->
+    <string name="home_remaining_to_adhan">المتبقي على أذان</string>
+    <string name="home_adhan_now">حان وقت الأذان</string>
+    <string name="home_remaining_to_iqama">المتبقي على الإقامة</string>
+    <string name="home_iqama_of">إقامة صلاة %1$s</string>
+    <string name="home_play_now">أذّن الآن</string>
+    <string name="schedule_no_exact">إذن التنبيهات الدقيقة غير مفعّل — اضغط هنا لتفعيله وإلا قد يتأخر الأذان</string>
+    <string name="schedule_ok">الأذان القادم مجدول في النظام: %1$s</string>
+    <string name="schedule_none">لم يُجدول أذان بعد — افتح الإعدادات وتأكد من تفعيل الصلوات</string>
+    <string name="quick_month">الإمساكية</string>
+    <string name="quick_tasbih">السبحة</string>
+    <string name="event_today">اليوم %1$s — كل عام وأنتم بخير</string>
+    <string name="event_tomorrow">غداً %1$s</string>
+    <string name="event_in_days">%1$s بعد %2$d يوماً</string>
+    <string name="event_hijri_new_year">رأس السنة الهجرية</string>
+    <string name="event_ashura">يوم عاشوراء</string>
+    <string name="event_ramadan">أول رمضان</string>
+    <string name="event_eid_fitr">عيد الفطر</string>
+    <string name="event_arafah">يوم عرفة</string>
+    <string name="event_eid_adha">عيد الأضحى</string>
+
+    <!-- الأذكار -->
+    <string name="adhkar_morning">أذكار الصباح</string>
+    <string name="adhkar_evening">أذكار المساء</string>
+    <string name="adhkar_after_prayer">أذكار بعد الصلاة</string>
+    <string name="adhkar_sleep">أذكار النوم</string>
+    <string name="adhkar_next">التالي</string>
+    <string name="adhkar_favorites">المفضلة</string>
+    <string name="adhkar_counter">العداد</string>
+    <string name="adhkar_all">جميع الأذكار</string>
+    <string name="adhkar_fav_title">الأذكار المفضلة</string>
+    <string name="adhkar_fav_empty">لا توجد أذكار مفضلة بعد — اضغط ♡ في البطاقة لإضافة ذكر.</string>
+    <string name="adhkar_repeat">التكرار %1$d / %2$d</string>
+    <string name="adhkar_share">مشاركة الذكر</string>
+
+    <!-- القبلة -->
+    <string name="qibla_direction">اتجاه القبلة</string>
+    <string name="qibla_hint_calibrate">حرّك الهاتف على شكل الرقم 8 لمعايرة البوصلة</string>
+    <string name="qibla_hint_no_sensor">لا يوجد حساس اتجاه في هذا الجهاز — الاتجاه معروض بالدرجات فقط</string>
+    <string name="compass_n">ش</string>
+    <string name="compass_e">ر</string>
+    <string name="compass_s">ج</string>
+    <string name="compass_w">غ</string>
+
+    <!-- المزيد -->
+    <string name="more_settings">إعدادات التطبيق</string>
+    <string name="more_settings_sub">تخصيص تجربة التطبيق حسب تفضيلاتك</string>
+    <string name="more_share">مشاركة التطبيق</string>
+    <string name="more_share_sub">شارك التطبيق مع أصدقائك وعائلتك</string>
+    <string name="more_share_text">تطبيق أذان: يرفع الأذان في وقته بدقة المنبه.\n%1$s</string>
+    <string name="more_rate">تقييم التطبيق</string>
+    <string name="more_rate_sub">شاركنا رأيك وادعمنا بتقييمك</string>
+    <string name="more_faq">الأسئلة الشائعة</string>
+    <string name="more_faq_sub">إجابات على أكثر الأسئلة شيوعًا</string>
+    <string name="more_privacy">سياسة الخصوصية</string>
+    <string name="more_privacy_sub">تعرف على كيفية حماية بياناتك</string>
+    <string name="more_version">الإصدار %1$s</string>
+
+    <!-- الصوت -->
+    <string name="sound_title">اختيار صوت الأذان</string>
+    <string name="sound_subtitle">استمع لأي أذان ثم اعتمده ليُنزَّل على جهازك</string>
+    <string name="sound_general">أذان الصلوات</string>
+    <string name="sound_fajr">أذان الفجر</string>
+    <string name="sound_fajr_none">لم يُحدد أذان خاص بالفجر — يُستخدم أذان الصلوات</string>
+    <string name="sound_search_hint">ابحث باسم المؤذن أو البلد…</string>
+    <string name="sound_count">%1$d أذان من إسلام ويب</string>
+    <string name="sound_play_error">تعذّر تشغيل الأذان — تأكد من اتصال الإنترنت.</string>
+    <string name="sound_download_error">فشل تنزيل الأذان — تأكد من اتصال الإنترنت ثم أعد المحاولة.</string>
+    <string name="sound_refreshed">تم تحديث القائمة: %1$d أذاناً</string>
+    <string name="sound_refresh_error">تعذّر تحديث القائمة — تأكد من اتصال الإنترنت.</string>
+    <string name="sound_downloading_pct">جارٍ التنزيل %1$d٪</string>
+    <string name="sound_downloading">جارٍ التنزيل…</string>
+    <string name="sound_choose">اختر أذاناً ثم اعتمده</string>
+    <string name="sound_adopted_current">الأذان المعتمد حالياً</string>
+    <string name="sound_adopt_fajr">اعتماد للفجر</string>
+    <string name="sound_adopt">اعتماد</string>
+    <string name="sound_skip">تخطي الآن — سيُستخدم منبه النظام حتى تعتمد أذاناً</string>
+
+    <!-- الإقامة -->
+    <string name="iqama_title">إعدادات الإقامة</string>
+    <string name="iqama_subtitle">تعديل الوقت بين الأذان والإقامة لكل صلاة</string>
+    <string name="iqama_info_title">الوقت المتبقي بين الأذان والإقامة</string>
+    <string name="iqama_info_sub">يمكنك تخصيص الوقت المتبقي لكل صلاة</string>
+    <string name="minute">دقيقة</string>
+    <string name="iqama_save">حفظ الإعدادات</string>
+    <string name="iqama_note">سيتم تطبيق الإعدادات على أوقات التنبيهات القادمة</string>
+
+    <!-- الموقع -->
+    <string name="loc_title">تحديد الموقع</string>
+    <string name="loc_subtitle">اختر طريقة تحديد موقعك</string>
+    <string name="loc_auto">تحديد موقعي تلقائياً</string>
+    <string name="loc_auto_sub">السماح للتطبيق بتحديد موقعك الحالي بدقة عالية</string>
+    <string name="loc_search">البحث عن مدينة</string>
+    <string name="loc_search_sub">ابحث عن مدينتك يدوياً لتحديد مواقيت الصلاة</string>
+    <string name="loc_map">الاختيار من الخريطة</string>
+    <string name="loc_map_sub">اختر موقعك مباشرة من الخريطة لتحديد المواقيت بدقة</string>
+    <string name="loc_continue">متابعة</string>
+    <string name="loc_error_off">خدمة الموقع مغلقة في الهاتف. اضغط هنا لفتح إعدادات الموقع وتفعيلها ثم أعد المحاولة.</string>
+    <string name="loc_error_timeout">لم يصل الموقع خلال المهلة. اخرج إلى مكان مكشوف أو فعّل «دقة عالية» في إعدادات الموقع، أو اختر مدينتك يدوياً.</string>
+    <string name="loc_error_denied">لم يُمنح إذن الموقع — اختر مدينتك يدوياً.</string>
+    <string name="loc_locating">جارٍ تحديد موقعك…</string>
+    <string name="city_search_title">البحث عن مدينة</string>
+    <string name="city_search_sub">ابحث بالعربية أو الإنجليزية</string>
+    <string name="city_search_hint">اسم المدينة…</string>
+    <string name="map_title">الاختيار من الخريطة</string>
+    <string name="map_subtitle">حرّك الخريطة حتى يقع الدبوس على موقعك، أو اختر مسجدك القريب</string>
+    <string name="map_loading">جارٍ تحميل الخريطة…</string>
+    <string name="map_nearest">أقرب مدينة: %1$s</string>
+    <string name="map_adopt_mosque">اعتماد هذا المسجد</string>
+    <string name="map_adopt_location">اعتماد هذا الموقع</string>
+
+    <!-- الإعدادات -->
+    <string name="settings_title">إعدادات التطبيق</string>
+    <string name="sec_basics">الأساسيات</string>
+    <string name="sec_language">اللغة</string>
+    <string name="sec_alerts">التنبيهات</string>
+    <string name="sec_prayers">الصلوات</string>
+    <string name="sec_calc">الحساب</string>
+    <string name="sec_reliability">الموثوقية</string>
+    <string name="sec_backup">النسخ الاحتياطي</string>
+    <string name="row_location">الموقع</string>
+    <string name="location_unset">غير محدد</string>
+    <string name="row_sound">صوت الأذان</string>
+    <string name="sound_none_label">لم يُعتمد أذان بعد — نغمة المنبه الافتراضية</string>
+    <string name="sound_fajr_label">%1$s · الفجر: %2$s</string>
+    <string name="row_iqama_sub">الوقت بين الأذان والإقامة</string>
+    <string name="language_system">لغة النظام</string>
+    <string name="reminder_before">تذكير قبل الأذان</string>
+    <string name="reminder_none">بدون</string>
+    <string name="reminder_min">%1$d د</string>
+    <string name="remind_friday">تذكير الجمعة</string>
+    <string name="remind_friday_sub">سورة الكهف والدعاء — مساء الخميس</string>
+    <string name="remind_fasting">تذكير الصيام</string>
+    <string name="remind_fasting_sub">الاثنين والخميس والأيام البيض — مساء اليوم السابق</string>
+    <string name="mode_adhan">أذان</string>
+    <string name="mode_vibrate">اهتزاز</string>
+    <string name="mode_off">إيقاف</string>
+    <string name="row_method">طريقة الحساب</string>
+    <string name="row_madhab">المذهب (العصر)</string>
+    <string name="row_exact">التنبيهات الدقيقة</string>
+    <string name="state_on">مفعّلة</string>
+    <string name="state_off_tap">غير مفعّلة — اضغط للتفعيل</string>
+    <string name="row_battery">استثناء تحسين البطارية</string>
+    <string name="row_autostart">التشغيل التلقائي (Xiaomi/MIUI)</string>
+    <string name="row_autostart_sub">فعّله للتطبيق وإلا يمنع النظام انطلاق الأذان في الخلفية</string>
+    <string name="row_log">سجل الأذان</string>
+    <string name="row_log_sub">آخر الأحداث: الجدولة والانطلاق والتذكير</string>
+    <string name="log_empty">لا أحداث بعد</string>
+    <string name="test_now">تجربة الأذان الآن</string>
+    <string name="test_in_minute">اختبار الأذان التلقائي بعد دقيقة</string>
+    <string name="test_hint">أغلق التطبيق واقفل الشاشة الآن؛ يجب أن ينطلق الأذان خلال دقيقة عبر المسار التلقائي نفسه.</string>
+    <string name="export_title">تصدير الإعدادات</string>
+    <string name="export_sub">ملف JSON يحوي المدينة والأذان والإقامة والمفضلة</string>
+    <string name="export_share_title">نسخة احتياطية من إعدادات أذان</string>
+    <string name="export_fail">تعذّر التصدير</string>
+    <string name="import_title">استيراد الإعدادات</string>
+    <string name="import_sub">اختر ملف نسخة احتياطية سابقة</string>
+    <string name="import_ok">تم استيراد النسخة الاحتياطية بنجاح</string>
+    <string name="import_bad">الملف ليس نسخة احتياطية صالحة</string>
+
+    <!-- طرق الحساب -->
+    <string name="method_auto">تلقائي (حسب البلد)</string>
+    <string name="method_tunisia">تونس — التوقيت الرسمي (وزارة الشؤون الدينية)</string>
+    <string name="method_tunisia_namazvakti">تونس — توقيت namazvakti</string>
+    <string name="method_mwl">رابطة العالم الإسلامي</string>
+    <string name="method_umm_al_qura">أم القرى</string>
+    <string name="method_egyptian">الهيئة المصرية العامة للمساحة</string>
+    <string name="method_karachi">جامعة كراتشي</string>
+    <string name="method_isna">أمريكا الشمالية (ISNA)</string>
+    <string name="method_dubai">دبي</string>
+    <string name="method_qatar">قطر</string>
+    <string name="method_kuwait">الكويت</string>
+    <string name="method_singapore">سنغافورة</string>
+    <string name="method_moonsighting">لجنة رؤية الهلال</string>
+    <string name="madhab_auto">تلقائي (حسب البلد)</string>
+    <string name="madhab_shafi">شافعي / مالكي / حنبلي</string>
+    <string name="madhab_hanafi">حنفي</string>
+
+    <!-- الإمساكية والسبحة -->
+    <string name="month_col_day">اليوم</string>
+    <string name="month_col_hijri">هجري</string>
+    <string name="month_share_title">إمساكية %1$s — %2$s</string>
+    <string name="month_image_title">إمساكية %1$s</string>
+    <string name="tasbih_target">الهدف %1$d</string>
+    <string name="tasbih_today">اليوم</string>
+    <string name="tasbih_total">الإجمالي</string>
+
+    <!-- الإشعارات والسجل -->
+    <string name="channel_reminder">التذكير قبل الأذان</string>
+    <string name="channel_info">تذكيرات الجمعة والصيام والمناسبات</string>
+    <string name="channel_fallback">تنبيه الأذان الاحتياطي</string>
+    <string name="notif_pre_title">أذان %1$s بعد %2$d دقيقة</string>
+    <string name="notif_pre_text">وقت الأذان %1$s — استعد للصلاة</string>
+    <string name="notif_adhan_time_title">حان الآن وقت صلاة %1$s</string>
+    <string name="notif_vibrate_text">وضع الاهتزاز مفعّل لهذه الصلاة</string>
+    <string name="notif_fallback_text">افتح التطبيق وفعّل «التشغيل التلقائي» ليعمل الأذان الكامل</string>
+    <string name="friday_title">غداً الجمعة</string>
+    <string name="friday_text">لا تنسَ قراءة سورة الكهف والإكثار من الصلاة على النبي ﷺ والدعاء في ساعة الإجابة.</string>
+    <string name="fasting_title">صيام الغد</string>
+    <string name="fasting_text">غداً %1$s — هل تنوي الصيام؟ تسحّر قبل الفجر.</string>
+    <string name="fasting_white">من الأيام البيض</string>
+    <string name="fasting_monday">يوم الاثنين</string>
+    <string name="fasting_thursday">يوم الخميس</string>
+    <string name="event_notif_text">غداً %1$s — كل عام وأنتم بخير.</string>
+    <string name="widget_next_label">الأذان القادم</string>
+    <string name="log_scheduled">جُدول أذان %1$s %2$s</string>
+    <string name="log_played">انطلق أذان %1$s</string>
+    <string name="log_vibrate">اهتزاز بدل أذان %1$s</string>
+    <string name="log_reminder">تذكير قبل أذان %1$s</string>
+    <string name="log_daily">فحص ليلي</string>
+    <string name="log_blocked">مُنع بدء الخدمة: %1$s</string>
+    <string name="log_error">خطأ: %1$s</string>
+    <string name="adhan_stop">إيقاف الأذان</string>
+    <string name="adhan_now_prayer">حان الآن وقت صلاة</string>
+
+    <!-- الأسئلة الشائعة -->
+    <string name="faq_q1">هل يحتاج التطبيق إلى إنترنت؟</string>
+    <string name="faq_a1">المواقيت تُحسب فلكياً على الجهاز والأذكار مضمّنة. الإنترنت مطلوب فقط للاستماع إلى أصوات الأذان من إسلام ويب وتنزيل الأذان المعتمد وعرض الخريطة.</string>
+    <string name="faq_q2">كيف أغيّر صوت الأذان؟</string>
+    <string name="faq_a2">من «المزيد» ← «إعدادات التطبيق» ← «صوت الأذان»: ابحث واستمع لأي أذان، ثم اضغط «اعتماد» ليُنزَّل على جهازك.</string>
+    <string name="faq_q3">لماذا يطلب التطبيق إذن التنبيهات الدقيقة؟</string>
+    <string name="faq_a3">ليُجدول الأذان بنفس آلية تطبيق المنبه، فيعمل في وضع توفير الطاقة وفي وقته تماماً.</string>
+    <string name="faq_q4">الأذان لا ينطلق على بعض الأجهزة، ما الحل؟</string>
+    <string name="faq_a4">فعّل «استثناء تحسين البطارية» و«التشغيل التلقائي» من إعدادات التطبيق، وتأكد من السماح بالإشعارات والعرض فوق قفل الشاشة.</string>
+    <string name="faq_q5">كيف أغيّر طريقة الحساب أو المذهب؟</string>
+    <string name="faq_a5">من «المزيد» ← «إعدادات التطبيق» ← قسم الحساب. تُختار الطريقة تلقائياً حسب بلدك، ويمكنك تغييرها.</string>
+    <string name="faq_q6">ما فائدة إعدادات الإقامة؟</string>
+    <string name="faq_a6">تحدد الوقت بين الأذان والإقامة لكل صلاة، وتظهر الشاشة الرئيسية عدّاداً تنازلياً للإقامة بعد الأذان.</string>
+    <string name="faq_q7">كيف تعمل بوصلة القبلة؟</string>
+    <string name="faq_a7">تعتمد على حساس الاتجاه في الهاتف وإحداثيات مدينتك. حرّك الهاتف على شكل الرقم 8 لمعايرة البوصلة.</string>
+
+    <!-- الخصوصية -->
+    <string name="privacy_t1">لا جمع للبيانات</string>
+    <string name="privacy_b1">لا يجمع التطبيق أي بيانات شخصية. الاتصال الوحيد بالإنترنت هو جلب ملفات الأذان من إسلام ويب وبلاطات الخريطة من OpenStreetMap.</string>
+    <string name="privacy_t2">الموقع</string>
+    <string name="privacy_b2">إذا اخترت تحديد الموقع تلقائياً فيُستخدم GPS مرة واحدة لمعرفة أقرب مدينة، وتُحفظ الإحداثيات على جهازك فقط.</string>
+    <string name="privacy_t3">التخزين</string>
+    <string name="privacy_b3">تُحفظ إعداداتك (المدينة، الأذان المعتمد، الإقامة، المفضلة) والملف الصوتي المنزَّل محلياً على الجهاز، وتُحذف بحذف التطبيق.</string>
+    <string name="privacy_t4">الأذونات</string>
+    <string name="privacy_b4">التنبيهات الدقيقة والإشعارات والعرض فوق قفل الشاشة تُستخدم حصراً لرفع الأذان في وقته.</string>
+    <string name="privacy_t5">المصادر</string>
+    <string name="privacy_b5">أصوات الأذان من موقع إسلام ويب (audio.islamweb.net)، والمواقيت بمكتبة adhan مفتوحة المصدر، والخريطة من OpenStreetMap.</string>
+</resources>

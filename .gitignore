@@ -1,0 +1,18 @@
+.gradle/
+build/
+*/build/
+local.properties
+tools/
+android-sdk/
+*.iml
+.idea/
+
+# مفاتيح التوقيع — لا تُرفع إلى المستودع
+keystore.properties
+keystore/
+
+# ملفات كاش Kotlin ومفاتيح إضافية
+.kotlin/
+*.jks
+.cxx/
+captures/
