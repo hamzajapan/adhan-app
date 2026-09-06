@@ -38,7 +38,7 @@
     <string name="quick_tasbih">Tasbih</string>
     <string name="event_today">Today: %1$s — blessed day</string>
     <string name="event_tomorrow">Tomorrow: %1$s</string>
-    <string name="event_in_days">%1$s in %2$d days</string>
+    <string name="event_in_days">%1$s in %2$s days</string>
     <string name="event_hijri_new_year">Hijri New Year</string>
     <string name="event_ashura">Day of Ashura</string>
     <string name="event_ramadan">First day of Ramadan</string>
@@ -56,7 +56,7 @@
     <string name="adhkar_all">All adhkar</string>
     <string name="adhkar_fav_title">Favorite adhkar</string>
     <string name="adhkar_fav_empty">No favorites yet — tap ♡ on a card to add one.</string>
-    <string name="adhkar_repeat">Repeat %1$d / %2$d</string>
+    <string name="adhkar_repeat">Repeat %1$s / %2$s</string>
     <string name="adhkar_share">Share dhikr</string>
 
     <string name="qibla_direction">Qibla direction</string>
@@ -86,12 +86,12 @@
     <string name="sound_fajr">Fajr adhan</string>
     <string name="sound_fajr_none">No Fajr-specific adhan — the prayers adhan is used</string>
     <string name="sound_search_hint">Search by muezzin or country…</string>
-    <string name="sound_count">%1$d adhans from Islamweb</string>
+    <string name="sound_count">%1$s adhans from Islamweb</string>
     <string name="sound_play_error">Cannot play the adhan — check your Internet connection.</string>
     <string name="sound_download_error">Download failed — check your connection and try again.</string>
-    <string name="sound_refreshed">List updated: %1$d adhans</string>
+    <string name="sound_refreshed">List updated: %1$s adhans</string>
     <string name="sound_refresh_error">Cannot update the list — check your Internet connection.</string>
-    <string name="sound_downloading_pct">Downloading %1$d%%</string>
+    <string name="sound_downloading_pct">Downloading %1$s%%</string>
     <string name="sound_downloading">Downloading…</string>
     <string name="sound_choose">Select an adhan, then adopt it</string>
     <string name="sound_adopted_current">Currently adopted adhan</string>
@@ -147,7 +147,7 @@
     <string name="language_system">System language</string>
     <string name="reminder_before">Reminder before adhan</string>
     <string name="reminder_none">None</string>
-    <string name="reminder_min">%1$d min</string>
+    <string name="reminder_min">%1$s min</string>
     <string name="remind_friday">Friday reminder</string>
     <string name="remind_friday_sub">Surah Al-Kahf and supplication — Thursday evening</string>
     <string name="remind_fasting">Fasting reminder</string>
@@ -199,14 +199,14 @@
     <string name="month_col_hijri">Hijri</string>
     <string name="month_share_title">Prayer times %1$s — %2$s</string>
     <string name="month_image_title">Prayer times — %1$s</string>
-    <string name="tasbih_target">Target %1$d</string>
+    <string name="tasbih_target">Target %1$s</string>
     <string name="tasbih_today">Today</string>
     <string name="tasbih_total">Total</string>
 
     <string name="channel_reminder">Reminder before adhan</string>
     <string name="channel_info">Friday, fasting and events reminders</string>
     <string name="channel_fallback">Fallback adhan alert</string>
-    <string name="notif_pre_title">%1$s adhan in %2$d minutes</string>
+    <string name="notif_pre_title">%1$s adhan in %2$s minutes</string>
     <string name="notif_pre_text">Adhan at %1$s — get ready for prayer</string>
     <string name="notif_adhan_time_title">It\'s time for %1$s prayer</string>
     <string name="notif_vibrate_text">Vibrate mode is on for this prayer</string>

@@ -38,7 +38,7 @@
     <string name="quick_tasbih">Tasbih</string>
     <string name="event_today">Aujourd\'hui : %1$s — bonne fête</string>
     <string name="event_tomorrow">Demain : %1$s</string>
-    <string name="event_in_days">%1$s dans %2$d jours</string>
+    <string name="event_in_days">%1$s dans %2$s jours</string>
     <string name="event_hijri_new_year">Nouvel an hégirien</string>
     <string name="event_ashura">Jour d\'Achoura</string>
     <string name="event_ramadan">Premier jour de Ramadan</string>
@@ -56,7 +56,7 @@
     <string name="adhkar_all">Toutes les invocations</string>
     <string name="adhkar_fav_title">Invocations favorites</string>
     <string name="adhkar_fav_empty">Aucun favori pour l\'instant — appuyez sur ♡ dans une carte pour en ajouter.</string>
-    <string name="adhkar_repeat">Répétition %1$d / %2$d</string>
+    <string name="adhkar_repeat">Répétition %1$s / %2$s</string>
     <string name="adhkar_share">Partager l\'invocation</string>
 
     <string name="qibla_direction">Direction de la Qibla</string>
@@ -86,12 +86,12 @@
     <string name="sound_fajr">Adhan du Fajr</string>
     <string name="sound_fajr_none">Aucun adhan spécifique au Fajr — l\'adhan des prières est utilisé</string>
     <string name="sound_search_hint">Rechercher un muezzin ou un pays…</string>
-    <string name="sound_count">%1$d adhans depuis Islamweb</string>
+    <string name="sound_count">%1$s adhans depuis Islamweb</string>
     <string name="sound_play_error">Lecture impossible — vérifiez la connexion Internet.</string>
     <string name="sound_download_error">Téléchargement échoué — vérifiez la connexion puis réessayez.</string>
-    <string name="sound_refreshed">Liste mise à jour : %1$d adhans</string>
+    <string name="sound_refreshed">Liste mise à jour : %1$s adhans</string>
     <string name="sound_refresh_error">Mise à jour impossible — vérifiez la connexion Internet.</string>
-    <string name="sound_downloading_pct">Téléchargement %1$d %%</string>
+    <string name="sound_downloading_pct">Téléchargement %1$s %%</string>
     <string name="sound_downloading">Téléchargement…</string>
     <string name="sound_choose">Choisissez un adhan puis adoptez-le</string>
     <string name="sound_adopted_current">Adhan actuellement adopté</string>
@@ -147,7 +147,7 @@
     <string name="language_system">Langue du système</string>
     <string name="reminder_before">Rappel avant l\'adhan</string>
     <string name="reminder_none">Aucun</string>
-    <string name="reminder_min">%1$d min</string>
+    <string name="reminder_min">%1$s min</string>
     <string name="remind_friday">Rappel du vendredi</string>
     <string name="remind_friday_sub">Sourate Al-Kahf et invocations — le jeudi soir</string>
     <string name="remind_fasting">Rappel de jeûne</string>
@@ -199,14 +199,14 @@
     <string name="month_col_hijri">Hégire</string>
     <string name="month_share_title">Horaires %1$s — %2$s</string>
     <string name="month_image_title">Horaires de prière — %1$s</string>
-    <string name="tasbih_target">Objectif %1$d</string>
+    <string name="tasbih_target">Objectif %1$s</string>
     <string name="tasbih_today">Aujourd\'hui</string>
     <string name="tasbih_total">Total</string>
 
     <string name="channel_reminder">Rappel avant l\'adhan</string>
     <string name="channel_info">Rappels vendredi, jeûne et fêtes</string>
     <string name="channel_fallback">Alerte d\'adhan de secours</string>
-    <string name="notif_pre_title">Adhan %1$s dans %2$d minutes</string>
+    <string name="notif_pre_title">Adhan %1$s dans %2$s minutes</string>
     <string name="notif_pre_text">Adhan à %1$s — préparez-vous pour la prière</string>
     <string name="notif_adhan_time_title">C\'est l\'heure de la prière %1$s</string>
     <string name="notif_vibrate_text">Mode vibreur activé pour cette prière</string>
