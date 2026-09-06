@@ -105,4 +105,6 @@ Privacy: no ads, no accounts, no data collection. Internet is used only for adha
 - **الخدمة الأمامية mediaPlayback:** تشغيل ملف الأذان كاملاً (2–4 دقائق) في وقت الصلاة حتى مع قفل الشاشة؛ تبدأ من تنبيه AlarmManager وتنتهي بانتهاء الملف أو ضغط «إيقاف».
 - **USE_FULL_SCREEN_INTENT:** إظهار شاشة الأذان فوق قفل الشاشة مع زر إيقاف — الاستخدام المسموح لتطبيقات المنبه.
 - **الموقع (ACCESS_FINE/COARSE):** اختياري، مرة واحدة لتحديد أقرب مدينة؛ لا يُخزن إلا على الجهاز.
-- **سياسة الخصوصية:** docs/privacy-policy.html في المستودع (تحتاج رابطاً عاماً).
+- **سياسة الخصوصية:** منشورة عبر Google Docs (نفس نص docs/privacy-policy.html):
+  https://docs.google.com/document/d/e/2PACX-1vSJPFMZ9FQiQAzD0wz3BDo2wGWTRWMDuxp9mqRwhuqMrDTP_Woa2Sjh_vsXsXuyJjPiiCCWS1NUdYhA/pub
+  (المستند: https://docs.google.com/document/d/1VcXsPKxDmzj_vmL012R-VQjEn-zKvinGUVIop-_MY9Y/edit — أي تعديل فيه ينعكس على الرابط المنشور)
